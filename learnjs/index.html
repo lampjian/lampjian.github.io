@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skitter-Slider</title>
+	<meta charset="utf-8">
+    <link type="text/css" href="css/skitter.styles.css" media="all" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>
+    <script type="text/javascript" src="js/jquery.skitter.min.js"></script>
+	<!-- Init the Skitter -->
+	<script type="text/javascript" language="javascript">
+	$(document).ready(function() {
+		$(".box_skitter_large").skitter({
+			theme: 'default',
+			dots: true, 
+			preview: true,
+			numbers_align: 'center'
+		});
+	});
+    </script>
+</head>
+<body>
+<div id="nav">
+<ul>
+<li><a href="code.html" target="_blank">coder example</a></li>
+<li><a href="test.html" target="_blank">testjs</a></li>
+</ul>
+</div>
+<div id="cont_wrapper">
+
+<p>
+
+<time>
+<script type="text/javascript">
+
+    var tmpDate = new Date();
+    var date = tmpDate.getDate();
+    var month= tmpDate.getMonth() + 1 ;
+    var year= tmpDate.getFullYear();
+    document.write(year);
+    document.write("年");
+    document.write(month);
+    document.write("月");
+    document.write(date);
+    document.write("日 ");
+
+    myArray=new Array(6);
+    myArray[0]="星期日";
+    myArray[1]="星期一";
+    myArray[2]="星期二";
+    myArray[3]="星期三";
+    myArray[4]="星期四";
+    myArray[5]="星期五";
+    myArray[6]="星期六";
+    weekday=tmpDate.getDay();
+    if (weekday==0 | weekday==6)
+    {
+        document.write(myArray[weekday]);
+    }
+    else
+    {
+        document.write(myArray[weekday]);
+    }
+
+</script>
+</time>
+
+</p>
+
+<!-- Slider begin -->
+<div class="box_skitter box_skitter_large">
+	<ul>
+		<li>
+			<a href="#cut"><img src="images/001.jpg" width="100%" class="hideBars" /></a>
+			<div class="label_text"><p>条状右滑</p></div>
+		</li>
+		<li>
+			<a href="#swapBlocks"><img src="images/002.jpg" width="100%" class="cubeShow" /></a>
+			<div class="label_text"><p>区块显示</p></div>
+		</li>
+		<li>
+			<a href="#swapBarsBack"><img src="images/003.jpg" width="100%" class="upBars" /></a>
+			<div class="label_text"><p>条状上滑</p></div>
+		</li>
+	</ul>
+</div>
+<!-- Slider end -->
+
+</div>
+
+</body>
+</html>
